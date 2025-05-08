@@ -1,6 +1,6 @@
 resource "aws_security_group" "datacenter-sg" {
     name = "datacenter-sg"
-    description = "Security group for Nautilus App Servers"
+    description = "Security group to allow inbound http and SSH Access"
     ingress {
         from_port = 80
         to_port = 80
