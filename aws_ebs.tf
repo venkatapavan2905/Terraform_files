@@ -1,7 +1,7 @@
 resource "aws_ebs_volume" "devops-volume" {
   type = "gp3"
   size = 2
-  availability_zone = "us-east-1"
+  availability_zone = "us-east-1a"
   tags = {
     Name = "devops-volume"
   }
