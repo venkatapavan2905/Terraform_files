@@ -6,3 +6,6 @@ resource "aws_ebs_volume" "devops-volume" {
     Name = "devops-volume"
   }
 }
+
+#Availability Zone is mandatory. 
+#String values must be quoted.
