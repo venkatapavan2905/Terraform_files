@@ -1,0 +1,5 @@
+1. Command to check instances status. 
+2. This is useful to verify the creation of instances and also to verify if the instance is running after changing the instance type.
+
+Command:
+   aws ec2 describe-instances --query "Reservations[*].Instances[*].{ID:InstanceId,Type:InstanceType,State:State.Name}" --output table
