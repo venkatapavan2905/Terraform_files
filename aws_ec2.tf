@@ -23,3 +23,6 @@ resource "aws_instance" "xfusion-ec2" {
         Name = "xfusion-ec2"
     }
 }
+
+#Command to check ec2 status:
+#aws ec2 describe-instances --query "Reservations[*].Instances[*].{ID:InstanceId,State:State.Name}" --output table
