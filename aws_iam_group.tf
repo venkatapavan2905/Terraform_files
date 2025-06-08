@@ -7,3 +7,5 @@ resource "aws_iam_group" "group" {
 #2. aws iam get-group --group-name <group_name>
 #3. aws iam create-group --group-name <group_name>
 #4. aws iam delete-group --group-name <group_name>
+#5. aws iam list-roles
+#6. aws iam delte-role --role-name <rolename>
