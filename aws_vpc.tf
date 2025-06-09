@@ -5,3 +5,6 @@ resource "aws_vpc" "nautilus-vpc" {
         Name = "nautilus-vpc"          //tags is mandatory to name vpc using terraform
     }
 }
+
+
+#aws ec2 describe-vpcs
