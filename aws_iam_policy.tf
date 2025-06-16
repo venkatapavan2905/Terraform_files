@@ -1,5 +1,10 @@
+variable "KKE_iampolicy" {
+  type    = string
+  default = "iampolicy_anita"
+}
+
 resource "aws_iam_policy" "policy" {
-  name = "iampolicy_javed"
+  name = var.KKE_iamrole
   policy = jsonencode({
     Version = "2012-10-17"
     Statement = [
