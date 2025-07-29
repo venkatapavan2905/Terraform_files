@@ -1,0 +1,8 @@
+1. Replace option 
+     This option is used to destroy and recreate a resource even though if there are no changes made to it.
+  
+   syntax: terraform apply -replace=<resource_type>.<resource_name>
+
+   example: terraform apply -replace=aws_instance.ec2
+
+   Instance Id of the ec2 chnages when destroyed and recreated.
