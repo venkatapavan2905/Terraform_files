@@ -35,4 +35,17 @@ resource "aws_s3_bucket_policy" "xfusion_bucket_policy" {
       }
     ]
   })
+
+}
+
+#prevent destroy life cycle rule
+
+resource "aws_s3_bucket" "bucket" {
+    bucket = "bucket"
+    lifecycle {
+        prevent_destroy = true
+    }
+    tags = {
+        Name = "bucket"
+    }
 }
