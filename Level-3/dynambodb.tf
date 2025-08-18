@@ -31,3 +31,9 @@ resource "aws_dynamodb_table_item" "item2" {
         status = {"S" = "in-progress"}
     })
 }
+
+#commands to verfiy the items added to table
+
+#aws dynamodb get-item -table-name datacenter-tasks --key '{"taskId": {"S": "1"}}'
+
+#aws dynamodb get-item --table-name datacenter-tasks --key '{"taskId": {"S": "2"}}'
