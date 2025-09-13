@@ -56,9 +56,9 @@ output "kke_tags_applied" {
 
 #terraform.tfvars
 
-KKE_PROJECT     = "DataCenter"
-KKE_TEAM        = "Dev_Team"
-KKE_ENVIRONMENT = "dev"
+#KKE_PROJECT     = "datacenter"
+#KKE_TEAM        = "dev-team"
+#KKE_ENVIRONMENT = "dev"
 
 #variables.tf
 variable "KKE_PROJECT" {
